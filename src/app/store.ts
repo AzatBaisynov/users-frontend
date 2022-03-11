@@ -1,9 +1,11 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore, ThunkAction, Action, getDefaultMiddleware } from '@reduxjs/toolkit';
+import homePageReducer from './pages/HomePage/homePageSlice';
+import authPageReducer from './pages/AuthPage/authPageSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    homePage: homePageReducer,
+    authPage: authPageReducer
   },
 });
 

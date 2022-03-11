@@ -1,0 +1,141 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+li {
+    list-style-type: none; 
+}
+ul {
+margin-left: 0;
+padding-left: 0; 
+}
+
+.container {
+	max-width: 920px;
+	width: 100%;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.d-flex {
+	display: flex;
+}
+.align-center {
+	align-items: center;
+}
+.justify-between {
+	justify-content: space-between;
+}
+
+.header {
+	height: 70px;
+	background-color: rgb(233, 233, 233);
+	border-bottom: 1px solid #fefefe;
+	&__container {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__logo {
+		width: 30px;
+		margin-right: 10px;
+	}
+	&__title {
+		font-size: 20px;
+	}
+	&__logout {
+		border: none;
+		background-color: none;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		font-size: 14px;
+	}
+}
+
+.logs {
+	padding: 30px 0;
+	& .container {
+		max-width: 870px;
+	}
+	&__list {
+		margin-top: 20px;
+	}
+	&__item {
+		list-style-type: none;
+		display: grid;
+    grid-template-columns: 2fr 4fr 1fr;
+		padding: 5px 20px;
+		font-size: 16px;
+		margin-bottom: 5px;
+		border: 1px solid #fff;
+		&:hover {
+			background-color: #f9edbe;
+			border-top: 1px solid #f0da85;
+			border-bottom: 1px solid #e6ce71;
+		}
+	}
+	&__controll {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__btn {
+		width: 100px;
+		margin: 20px 10px 0;
+	}
+	&__filter {
+		width: 100px;
+		padding: 2px 5px;
+		margin-right: 5px;
+	}
+	&__search {
+		padding: 5px 10px;
+		background-color: #008080;
+		color: #fff;
+		border: none;
+		&:hover {
+			background-color: #046363;
+		}
+	}
+}
+
+.auth {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background: url("../images/user.jpg") no-repeat center/cover;
+	&__form {
+		width: 300px;
+		height: 200px;
+		background-color: rgba(0,0,0,.5);
+		display: flex;
+		flex-direction: column;
+		padding: 30px 0;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__inp {
+		height: 35px;
+		width: 80%;
+		padding: 0 10px;
+	}
+	&__btn {
+		width: 100px;
+		height: 30px;
+		background-color: #30844f;
+		border: none;
+		color: #fff;
+		font-weight: 600;
+		&:hover {
+			background-color: #145a2e;;
+		}
+	}
+}
